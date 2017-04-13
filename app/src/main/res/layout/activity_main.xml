@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98FB98"
+    tools:context="com.example.android.popularmovies.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_SortOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:visibility="visible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_Messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COLLATERAL DAMAGE"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:visibility="visible"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity = "center"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
